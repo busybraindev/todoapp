@@ -6,6 +6,8 @@ import Tm from "./Tm";
 const Td = () => {
   const { td, std, dm, tg } = useContext(sc);
   const inputRef = useRef();
+  console.log(inputRef);
+
   const add = () => {
     const iT = inputRef.current.value.trim();
     console.log(iT);
