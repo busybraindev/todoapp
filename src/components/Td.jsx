@@ -23,15 +23,15 @@ const Td = () => {
     inputRef.current.value = "";
   };
   return (
-    <div className="bg-white place-self-center w-11/12 max-w-80 flex flex-col p-7 min-h-[550px] rounded-xl">
-      <div className="flex items-center mt-7 gap-2">
+    <div className="bg-white place-self-center w-full max-w-[350px] flex flex-col min-h-[550px] rounded-xl">
+      <div className="flex items-center mt-7 gap-2 p-7">
         <img src={todo}></img>
         <h1 className="text-3xl font-semibold">To-Do List</h1>
       </div>
-      <div className="flex items-center  my-7 bg-rose-200 rounded-full w-[290px]">
+      <div className="flex items-center my-7 bg-rose-200 rounded-full w-full">
         <input
           ref={inputRef}
-          className="bg-transparent border-0 outline-none h-14 pl-6 pr-2 placeholder:text-slate-600"
+          className="bg-transparent border-0 outline-none h-14 pl-6  placeholder:text-slate-600 w-[230px]"
           type="text"
           placeholder="Add task"
         />
